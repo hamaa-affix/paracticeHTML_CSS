@@ -1,0 +1,32 @@
+
+#container {
+  text-align: center;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  /* padding = 文字と余白の間に余白を追加する */
+  padding: 10px 40px;
+  /* margin = ボーダーの外側に余白を追加する */
+  margin: 10px 0;
+  /* font-weight = 文字の太さ 100 ~ 600 */
+  font-weight: 600;
+  cursor: pointer;
+  /* transition = アニメーションの設定をできる. (状態が変わった時の設定)
+  第一引数: 状態を変化させたい項目all(アニメーションの全て), background-colorなどなど
+  第二引数は変化の時間
+  第三引数は 移り変わりの緩急の設定
+  第四引数はhホバーして開始するまでのアニメーションの遅延時間を設定　何秒立ってアニメーションを開始するか。
+  カンマ区切りでさらに指定したいプロパティを指定できる
+  */
+  transition: all 2s ease 3s,
+              background-color 0.3s ease 2s;
+}
+
+/* アニメーションの設定 （状態が変わった時の設定）*/
+.btn:hover {
+  background-color: black;
+  color: white;
+}
