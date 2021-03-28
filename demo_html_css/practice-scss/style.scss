@@ -1,0 +1,16 @@
+.parent {
+  color: blue;
+
+  // > をつけることで親要素の一段階下がった要素にpropatyを付与している。
+  & > .element {
+    color: purple;
+    //elemnet の中でsecond-childというclassを持っているプロパティに適応させる
+    &.seconad-child {
+      color: black;
+    }
+  }
+}
+
+.element {
+  color: red;
+}

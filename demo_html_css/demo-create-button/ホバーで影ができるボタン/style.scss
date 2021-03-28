@@ -1,0 +1,25 @@
+$cwhite: white;
+$cblack: black;
+
+#container {
+  text-align: center;
+
+  .btn {
+    background-color: $cwhite;
+    color: $cblack;
+    padding: 10px 40px;
+    margin: 10px 0;
+    border: 1px solid $cblack;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    //btのsercond classに対して
+    &.float {
+      //box-shadowを適用させる
+      &:hover {
+        //第一引数がx軸 第二引数がy軸 第三引数が「どれだけ影をぼやかすか」数値が大きくなれば影がボヤけていく。 第四引数が「影の広がり」第五引数が「影のいろ」
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

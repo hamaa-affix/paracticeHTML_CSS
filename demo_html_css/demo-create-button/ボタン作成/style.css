@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* アニメーションの設定 （状態が変わった時の設定）*/
+#container {
+  text-align: center;
+}
+
+#container .btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  /* padding = 文字と余白の間に余白を追加する */
+  padding: 10px 40px;
+  /* margin = ボーダーの外側に余白を追加する */
+  margin: 10px 0;
+  /* font-weight = 文字の太さ 100 ~ 600 */
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#container .btn:hover {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
