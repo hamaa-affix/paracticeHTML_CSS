@@ -1,0 +1,89 @@
+$cwhite: white;
+$cblack: black;
+
+#container {
+	text-align: center;
+
+	.btn {
+		background-color: $cwhite;
+		color: $cblack;
+		padding: 10px 40px;
+		margin: 10px 40px;
+		border: 1px solid $cblack;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&.float {
+			&:hover {
+				color: $cwhite;
+				background-color: $cblack;
+				box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+			}
+		}
+
+		&.filled {
+			background-color: $cblack;
+			color: $cwhite;
+			box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+			&:hover {
+				color: $cblack;
+				background-color: $cwhite;
+				box-shadow: initial;
+			}
+		}
+
+		&.letter-spacing {
+			&:hover {
+				color: $cwhite;
+				background-color: $cblack;
+				//transform: scale(1.2, 1.2);
+				letter-spacing: 3px;
+			}
+		}
+		&.shadow {
+			&:hover {
+				box-shadow: 9px 9px 3px $cblack;
+				transform: translate(-2.5px, -2.5px);
+			}
+		}
+		&.soild {
+			border-radius: 10px;
+			box-shadow: 2px 2px 2px $cblack;
+			&:hover {
+				box-shadow: none;
+				transform: translate(2px, 2px);
+			}
+		}
+	}
+}
+
+/*
+transformは要素を好きな位置にズラしたり、回転させたり、拡大&縮小させたり、自由度の高いプロパティ
+移動系
+	セレクタ {
+	transform: translate(右方向◯px, 左方向◯px);
+	}
+	[例]
+	div {
+	transform: translate(5px, 0);
+	}
+回転系
+	セレクタ {
+	transform: rotate(◯deg);
+	}
+
+	[例]
+	div {
+	transform: rotate(45deg);
+	}
+拡大&縮小
+	セレクタ {
+	transform: scale(縦◯倍, 横◯倍);
+	}
+
+	[例]
+	div {
+	transform: scale(0.5, 1.5);
+	}
+*/

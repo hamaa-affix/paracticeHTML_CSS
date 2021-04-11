@@ -1,0 +1,41 @@
+/*
+transformは要素を好きな位置にズラしたり、回転させたり、拡大&縮小させたり、自由度の高いプロパティ
+移動系
+	セレクタ {
+	transform: translate(右方向◯px, 左方向◯px); translateX() x軸に移動指定できる
+	}
+	[例]
+	div {
+	transform: translate(5px, 0);
+	}
+回転系
+	セレクタ {
+	transform: rotate(◯deg);
+  //回転の視点を決めることができる
+  //transform-origin: top(or buttom) left(rigth);
+	}
+
+	[例]
+	div {
+	transform: rotate(45deg);
+	}
+拡大&縮小
+	セレクタ {
+	transform: scale(縦◯倍, 横◯倍);
+	}
+
+	[例]
+	div {
+	transform: scale(0.5, 1.5);
+	}
+*/
+.rect {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  //margin autoを適用するにはwidthの定義が必要
+  margin: 0 auto;
+  //複数選択もできる///
+  transform: translateX(50px) skew(30deg);
+  transform-origin: center center;
+}
