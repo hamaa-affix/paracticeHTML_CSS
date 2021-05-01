@@ -1,0 +1,61 @@
+body {
+	outline: 1px solid black;
+	/* 最低の高さが100vh */
+	min-height: 100vh;
+  /*固定幅  */
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template:
+  "header header header header header" 150px
+  "...... ...... ...... ...... ......" 10px
+  "left   ...... center ...... rigth " 1fr
+  "...... ...... ...... ...... ......" 10px
+  "footer footer footer footer footer" 300px
+  / 150px 10px 1fr 10px 200px;
+
+}
+
+header {
+	outline: 1px solid black;
+	background-color: antiquewhite;
+  grid-area: header;
+}
+
+nav {
+	outline: 1px solid black;
+	background-color: aqua;
+  grid-area: left;
+}
+
+main {
+	outline: 1px solid black;
+	background-color: darkorange;
+  grid-area: center;
+}
+
+aside {
+	outline: 1px solid black;
+	background-color: pink;
+  grid-area: rigth;
+}
+
+footer {
+	outline: 1px solid black;
+	background-color: antiquewhite;
+  grid-area: footer;
+}
+
+/* レスポンシブ */
+/* 横幅が900px以下になったらcssを適用させる */
+@media screen and (max-width: 1000px) {
+  body {
+    grid-template:
+      "header 150px"
+      "center 1fr"
+      "left"
+      "rigth"
+      "footer 300px"
+    ;
+  }
+}
