@@ -1,0 +1,71 @@
+body {
+	outline: 1px solid black;
+	margin: 0;
+	/* 最低の高さが100vh */
+	min-height: 100vh;
+  display: flex;
+  /* flex propatyを縦に当てる　高さを適用したいから*/
+  flex-direction: column;
+  /*固定幅  */
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+	outline: 1px solid black;
+	background-color: antiquewhite;
+	height: 150px;
+}
+
+div {
+	outline: 1px solid black;
+	background-color: antiquewhite;
+	display: flex;
+  /* 高さに対するflex(bodyから) */
+  flex: 1;
+}
+
+nav {
+	outline: 1px solid black;
+	background-color: aqua;
+	/* flex: 2; */
+	width: 150px;
+}
+
+main {
+	outline: 1px solid black;
+	background-color: darkorange;
+	flex: 1;
+}
+
+aside {
+	outline: 1px solid black;
+	background-color: pink;
+	/* flex: 2; */
+	width: 200px;
+}
+
+footer {
+	outline: 1px solid black;
+	background-color: antiquewhite;
+	height: 200px;
+}
+
+/* レスポンシブ */
+/* 横幅が900px以下になったらcssを適用させる */
+@media screen and (max-width: 900px){
+  body,
+  nav,
+  aside{
+    width: 100%;
+  }
+  div {
+    flex-direction: column;
+  }
+  nav, aside {
+    width: 100%;
+  }
+  main {
+    order: -1;
+  }
+}
