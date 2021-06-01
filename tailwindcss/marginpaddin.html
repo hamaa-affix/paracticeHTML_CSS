@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!-- インライン -->
+  <!-- m-4 1rem 1文字文 -->
+  <span class="border border-red-500 m-8">spanタグです</span>
+  <span class="border border-red-500 p-12">インライン要素です</span>
+
+  <!-- ブロック要素 -->
+  <p class="border border-blue-500 mt-16">パラグラむです。らしいです。あああああ</p>
+  <p class="border border-blue-500 m-8 p-8">パラグラむです。らしいです。あああああ</p>
+  <p class="border border-blue-500 mx-16">パラグラむです。らしいです。あああああ</p>
+
+  <!-- ブロック要素にインライン要素 -->
+  <span class="border border-green-500 mt-16">spanタグはパラグラムの略です<span class="border border-green-500 m-8">spanタグです</span></span>
+  <!-- flex box -->
+  <div class="border border-pink-500 flex justify-around mt-20">
+    <div class="border border-pink-500">子要素1</div>
+    <div class="border border-pink-500 m-8">子要素2</div>
+  </div>
+</body>
+</html>

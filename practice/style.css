@@ -1,0 +1,16 @@
+.container {
+  /*ボックスレイアウトの縦幅、横幅*/
+  width: 200px;
+  height: 400px;
+
+  /*ボックスレイアウトの要素のエリア調整(内側、外側、中間)*/
+  margin: 20px;
+  padding: 30px;
+
+  /*コンテンツの配置調整*/
+  position: relative;
+  top: 200px;
+  left: 400px;
+
+  background-color: blueviolet;
+}
