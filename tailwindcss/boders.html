@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 文字色、線、背景色 -->
+  <div class="border-2 border-red-400" >某だー</div>
+
+  <div class="mt-16 flex justify-around divide-x divide-green-400">
+    <div class="flex-grow text-center">区切り線</div>
+    <div class="flex-grow text-center">区切り線</div>
+    <div class="flex-grow text-center">区切り線</div>
+  </div>
+
+  <!-- rounded -->
+  <div class="mt-16 rounded-full w-24 py-2 bg-indigo-400 text-white text-center">rounded</div>
+  <div class="mt-16 rounded-full w-24 py-9 bg-indigo-400 text-white text-center">rounded</div>
+
+  <!-- ring -->
+  <div class="mt-16 rounded-full w-24 py-9 bg-indigo-500 text-center  ring-4 ring-indigo-600 ring-offset-4 ring-offset-blue-200">ring</div>
+
+  <!-- shadow -->
+  <div class="mt-4 w-40 shadow">shodow</div>
+  <div class="mt-4 w-40 border shadow-md">showdow-md</div>
+  <div class="mt-4 w-40 border shadow-lg">shodow-lg</div>
+</body>
+</html>
