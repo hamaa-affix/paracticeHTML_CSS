@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Document</title>
+<style>
+/*  html{
+    font-size: 100%;  ブラウザの初期設定 16px 1rem root 
+  } */
+  .px16{
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+  <!-- p, h1〜h6, span -->
+  <p class="px16">フォントサイズ16px</p>
+  <p class="text-base">テキストサイズ base</p>
+  <p class="text-2xl">テキストサイズ 2xl</p>
+
+  <!-- 文字間の幅(横)  -->
+  <p class="mt-16 tracking-wider">
+    文字の間の幅が開きます。(横方向)<br>
+    文字の間の幅が開きます。(横方向)<br>
+    文字の間の幅が開きます。(横方向)<br>
+  </p>
+  <!-- 文字間の幅(縦)  -->
+  <p class="mt-16 leading-10">
+    文字の間の幅が開きます。(縦方向)<br>
+    文字の間の幅が開きます。(縦方向)<br>
+    文字の間の幅が開きます。(縦方向)<br>
+  </p>
+  <div class="text-center">ブロック要素内のテキストを中央に</div>
+</body>
+</html>
